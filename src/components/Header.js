@@ -7,7 +7,6 @@ import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as GB } from "../images/gb.svg";
 import { ReactComponent as CRO } from "../images/hr.svg";
-
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Grow from "@mui/material/Grow";
 import Paper from "@mui/material/Paper";
@@ -50,7 +49,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="headerClass">
       <div className="headerLeft">
         <div className="themeChanger">
           <FontAwesomeIcon icon={faMoon} className="moonIcon" />
@@ -73,6 +72,7 @@ const Header = () => {
           />
         </div>
         <Popper
+          className="popper"
           open={open}
           anchorEl={anchorRef.current}
           role={undefined}
