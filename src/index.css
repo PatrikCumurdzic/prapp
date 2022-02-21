@@ -207,3 +207,106 @@ a.three {
 .topCard {
   color: white;
 }
+
+/* PROFILE */
+
+.profile {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profileCard {
+  margin-top: 78px;
+  display: flex;
+  width: 540px;
+  height: 240px;
+  align-items: center;
+}
+.profilePicture {
+  cursor: pointer;
+  min-height: 200px;
+  min-width: 200px;
+  margin: 20px;
+  border-radius: 5px;
+  background-image: url("images/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profileName {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.profileInfo {
+  cursor: pointer;
+  margin-top: 78px;
+  height: 240px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.topProfile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profileAbout {
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.profileInfo p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 0;
+}
+.infoContent p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.data {
+  padding-right: 20px;
+  padding-left: 0;
+  align-items: flex-end;
+}
+
+.profileAbout {
+  height: 240px;
+}
+.aboutInfo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.userInformation {
+  padding: 20px;
+  margin: 0;
+}
+.icon {
+  margin-right: 5px;
+}
+.editIcon {
+  position: static;
+  right: 450px;
+  top: 200px;
+}

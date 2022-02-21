@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Records from "./components/Records";
+import Profile from "./components/Profile";
+import Leaderboard from "./components/Leaderboard";
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
         <Header />
         <Navbar />
         <div className="content">
-          <Records />
+          <Leaderboard />
         </div>
         <Footer />
       </div>
