@@ -310,3 +310,12 @@ a.three {
   right: 450px;
   top: 200px;
 }
+
+
+/* Leaderboard */
+
+.leaderboard{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
