@@ -7,21 +7,24 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { dividerClasses } from "@mui/material";
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
+    backgroundColor: '#e5e5e5',
+    color: '#3B3B3B',
+    fontWeight: '500',
+    fontFamily: 'Poppins',
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
+    fontFamily: 'Poppins',
   },
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
-    backgroundColor: theme.palette.action.hover,
+    backgroundColor: '#fcfcfc',
   },
   // hide last border
   "&:last-child td, &:last-child th": {
@@ -51,11 +54,14 @@ const rows = [
   createData("Gingerbread", 356, 16.0, 49, 3.9),
 ];
 
+
 function Leaderboard() {
+
   return (
     <div className="leaderboard">
-      <TableContainer component={Paper} sx={{maxWidth: 1500, minHeight: 600}} >
-      <Table aria-label="customized table" >
+      <TableContainer component={Paper} sx={{maxWidth: 1500, minHeight: 587, maxHeight: 587, boxShadow: 0}}>
+      <TableContainer component={Paper} sx={{maxWidth: 1500, maxHeight: 587}}>
+      <Table stickyHeader aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>Users</StyledTableCell>
@@ -84,9 +90,12 @@ function Leaderboard() {
               <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell>
             </StyledTableRow>
+            
           ))}
         </TableBody>
+        
       </Table>
+      </TableContainer>  
     </TableContainer>
     </div>
     
